@@ -1,6 +1,5 @@
 import { platform, release, arch, cpus, freemem, totalmem, uptime } from 'node:os'
 
-
 console.log('Informacion del sistema operativo:')
 console.log('----------------------------------')
 

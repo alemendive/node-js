@@ -2,9 +2,7 @@
 const readFilePromise = promisify(fs.readFile) */
 // Esto solo en los modulos nativos que no tienen promesas nativas
 
-
-//TOP LEVEL AWAIT (los enmaScriptmodules pueden usar el await en el cuerpo del archivo)
-
+// TOP LEVEL AWAIT (los enmaScriptmodules pueden usar el await en el cuerpo del archivo)
 
 import { readFile } from 'node:fs/promises'
 
@@ -13,8 +11,6 @@ const text = await readFile('./archivo.txt', 'utf-8')
 console.log('primer texto: ', text)
 console.log('----> Hacer cosas mientras lee el archivo...')
 
-
 console.log('Leyendo el segundo archivo...')
 const secondText = await readFile('./archivo2.txt', 'utf-8')
 console.log('segundo texto: ', secondText)
-
